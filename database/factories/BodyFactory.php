@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Body;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -14,6 +15,9 @@ class BodyFactory extends Factory
      *
      * @return array<string, mixed>
      */
+
+    protected $model = Body::class;
+
     public function definition(): array
     {
         return [
